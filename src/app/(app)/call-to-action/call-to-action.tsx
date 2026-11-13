@@ -7,10 +7,10 @@ import Link from "next/link";
 
 export function CallToAction() {
     return (
-        <section className="flex justify-center mb-16 ">
-            <div className="flex flex-col justify-center items-center gap-5 text-center w-[480px] p-10 bg-cinza-100/20 shadow-xl  
+        <section className="flex justify-center mb-16 float">
+            <div className="flex flex-col justify-center items-center gap-5 text-center w-120 p-10 bg-cinza-100/20 shadow-xl  
             rounded-xl  shadow-cinza-100/90">
-                <div className="w-25 h-4 bg-cinza-100 rounded-full w-fit px-5 flex py-4 items-center border border-white/10 gap-2 shadow-2xl">
+                <div className="h-4 bg-cinza-100 rounded-full w-fit px-5 flex py-4 items-center border border-white/10 gap-2 shadow-2xl">
                     <Scissors className="text-dourado-100 h-4" />
                     <span className="uppercase text-white text-xs">Novo Estilo</span>
                 </div>
@@ -31,16 +31,16 @@ export function CallToAction() {
                 </div>
                 <Separator className="bg-white/20" />
                 <div className="flex gap-5 text-gray-100">
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2 hover:text-dourado-100 transform duration-300">
                         <CheckCircle2 className="w-4" />
                         Seguro
                     </span>
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2 hover:text-dourado-100 transform duration-300">
                         <CheckCircle2 className="w-4" />
                         Rápido
 
                     </span>
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2 hover:text-dourado-100 transform duration-300">
                         <CheckCircle2 className="w-4" />
                         Exclusivo
                     </span>

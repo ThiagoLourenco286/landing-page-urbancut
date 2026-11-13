@@ -9,7 +9,7 @@ interface CardProps {
 
 export function CardSection({ title, subtitle, paragrafo, span }: CardProps) {
     return (
-        <div className="h-52 w-60 p-7 md:h-60 md:w-64 md:p-9 bg-cinza-100 relative">
+        <div className="h-52 w-60 p-7 md:h-55 md:w-64 md:p-9 bg-cinza-100 relative hover:border hover:border-dourado-100 hover: transition duration-500">
             <Clock className="text-dourado-100 absolute top-3 right-3" />
             <div className="flex flex-col gap-4">
                 <h3 className="text-dourado-100 text-2xl font-black">{title}</h3>

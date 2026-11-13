@@ -2,10 +2,10 @@ import { CardSection } from "./card-section/card-section";
 
 export function FatureSection() {
     return (
-        <section className="px-6 md:px-9">
+        <section className="px-6 md:px-9 fade-up">
             <div className="flex flex-col w-full">
                 <div className="flex flex-col gap-8">
-                    <div className="w-24 h-1 bg-dourado-100 rounded-full" />
+                    <div className="w-24 h-1 bg-dourado-100 rounded-full underline-draw" />
                     <h2 className="uppercase text-dourado-100 italic font-black text-3xl md:text-6xl">
                         <span className="text-white">Nossos </span>
                         serviços

@@ -5,11 +5,11 @@ import { HeroSection } from "./hero-section/hero-section";
 
 export default function Home() {
   return (
-    <article className="flex flex-col gap-16 md:gap-32">
+    <main className="flex flex-col pt-30 space-y-25">
       <HeroSection />
       <FatureSection />
       <AvaliationSection />
       <CallToAction />
-    </article>
+    </main>
   );
 }

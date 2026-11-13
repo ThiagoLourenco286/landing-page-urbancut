@@ -1,30 +1,49 @@
+'use client'
 import { Button } from "@/src/components/ui/button";
 import { ActiveLink } from "./active-link/active-link";
 import { Logo } from "./logo/logo";
-import Link from "next/link";
-import { MenuHamburguer } from "./menu-hambuerger/menu-hamburguer";
-
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export function Header() {
+
+    const [open, setIsOpen] = useState(false)
+
+    function handleToogle() {
+        setIsOpen((prev) => !prev)
+    }
     return (
-        <header className="fixed border-b w-full top-0 z-50 border-white/10">
-            <div className="px-8">
-                <nav className="flex h-16 items-center justify-between">
-                    <Logo />
-                    <div className="md:hidden">
-                        <MenuHamburguer />
-                    </div>
+        <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-preto-100 p-5">
+            <div className="flex items-center justify-between">
+                <Logo />
+                <nav className="hidden items-center gap-4 md:flex">
+                    <ActiveLink href='/'>Inicio</ActiveLink >
+                    <ActiveLink href='/serviços'>Serviços</ActiveLink>
 
-                    <div className="hidden md:flex items-center gap-4 ">
-                        <ActiveLink href='/'>Inicio</ActiveLink>
-                        <ActiveLink href='/serviços'>Serviços</ActiveLink>
-
-                        <Button className="bg-dourado-100 font-sans text-xm uppercase">
-                            Agendar
-                        </Button>
-                    </div>
+                    <Button className="bg-dourado-100 font-sans text-xm uppercase">
+                        Agendar
+                    </Button>
                 </nav>
+
+                <button type="button" className="md:hidden" onClick={handleToogle}>
+                    {open ? (
+                        <X className="text-white" />
+                    ) : (
+                        <Menu className="text-white" />
+                    )}
+                </button>
             </div>
+
+            {open && (
+                <nav className="mt-4 flex flex-col gap-4 md:hidden">
+                    <ActiveLink href='/'>Inicio</ActiveLink >
+                    <ActiveLink href='/serviços'>Serviços</ActiveLink>
+
+                    <Button className="bg-dourado-100 font-sans text-xm uppercase">
+                        Agendar
+                    </Button>
+                </nav>
+            )}
         </header >
     )
 }

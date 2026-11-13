@@ -4,8 +4,8 @@ export function AvaliationSection() {
     return (
         <section className="px-6 md:px-9 ">
             <div className="flex flex-col gap-8">
-                <div className="w-24 h-1 bg-dourado-100 rounded-full" />
-                <h2 className="uppercase text-dourado-100 italic font-black text-3xl md:text-6xl">
+                <div className="w-24 h-1 bg-dourado-100 rounded-full underline-draw" />
+                <h2 className="uppercase text-dourado-100 italic font-black text-3xl md:text-6xl ">
                     <span className="text-white">Feed</span>
                     Back
                 </h2>
