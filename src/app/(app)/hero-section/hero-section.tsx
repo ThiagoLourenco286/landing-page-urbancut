@@ -1,4 +1,5 @@
-import Reveal from "@/src/components/reveal";
+
+import Reveal from "@/components/reveal";
 import { Medal } from "lucide-react";
 
 export function HeroSection() {

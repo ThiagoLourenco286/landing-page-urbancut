@@ -1,5 +1,6 @@
-import { Logo } from "@/src/app/(app)/header/logo/logo";
+
 import { Facebook, Instagram, Phone } from "lucide-react";
+import { Logo } from "../header/logo/logo";
 
 export function Footer() {
     return (

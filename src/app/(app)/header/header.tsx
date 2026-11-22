@@ -1,5 +1,6 @@
 'use client'
-import { Button } from "@/src/components/ui/button";
+
+import { Button } from "@/components/ui/button";
 import { ActiveLink } from "./active-link/active-link";
 import { Logo } from "./logo/logo";
 import { Menu, X } from "lucide-react";
